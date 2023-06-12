@@ -1,3 +1,5 @@
+//! SELECTORS //
+
 
 //?  ElementsByID   //
 
@@ -61,6 +63,49 @@
 // const lists = document.querySelectorAll("ul li");
 
 // lists.forEach((li) => console.log(li.innerText));
+
+
+//! TRAVERSING //
+
+//* 1 - Yukari Yönde Traverse 
+
+// const list = document.querySelector("li");
+// console.log(list.parentElement.parentElement.parentElement.parentElement.parentElement);
+
+// console.log(list.closest("section")); //? listin en yakını section olan parent
+
+
+//* 2 - Asaği Yönde Traverse
+
+// const addItem = document.querySelector(".add-item");
+
+// console.log(addItem.children)
+
+// addItem.children[0].style.color = "red";
+// addItem.children[1].style.backgroundColor = "blue";
+// addItem.children[2].style.backgroundColor = "purple";
+
+// addItem.firstElementChild.style.color = "orange";
+// addItem.lastElementChild.style.color = "yellowgreen"
+
+//* 3 - Yatay Yönde Traverse
+
+// const ul = document.querySelector("ul");
+ 
+// const lists = ul.children ;
+// console.log(lists);
+
+// const js = lists[2];
+// console.log(js);
+
+
+// const previousElement = js.previousElementSibling;
+
+// console.log(previousElement.innerText);
+
+// const nextElement = js.nextElementSibling;
+
+// console.log(nextElement.innerText);
 
 
 
